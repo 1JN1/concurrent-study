@@ -30,7 +30,7 @@ public class Product {
     public void use() {
         try {
             System.out.println("消费产品" + name + "中...");
-            Thread.sleep(500);
+            Thread.sleep(random.nextInt(500, 1000));
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -43,7 +43,7 @@ public class Product {
 
         try {
             System.out.println("生产产品中...");
-            Thread.sleep(1000);
+            Thread.sleep(random.nextInt(1000, 2000));
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
